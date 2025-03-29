@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">CombutivelRentavel-Pos2025</string>
-    <string name="consumo_combustivel_1">Consumo Combustível 1:</string>
-    <string name="consumo_combustivel_2">Consumo Combustível 2:</string>
-    <string name="valor_litro_combustivel_1">Valor Litro Combustível 1:</string>
-    <string name="valor_litro_combustivel_2">Valor Litro Combustível 2:</string>
-    <string name="buscar_1">Buscar 1</string>
-    <string name="buscar_2">Buscar 2</string>
+    <string name="consumo_gasolina">Consumo Gasolina</string>
+    <string name="consumo_etanol">Consumo Etanol</string>
+    <string name="valor_litro_consumo_gasolina">Valor Litro Gasolina</string>
+    <string name="valor_litro_combustivel_etanol">Valor Litro Etanol</string>
+    <string name="buscar_1">Buscar</string>
+    <string name="buscar_2">Buscar</string>
+    <string name="litro_gasolina">Litro Gasolina</string>
+    <string name="litro_etanol">Litro Etanol</string>
+    <string name="calcular_consumo">Calcular Consumo</string>
 </resources>
