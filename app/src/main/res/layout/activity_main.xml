@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="20dp"
-        android:text="@string/consumo_combustivel_1"
+        android:text="Consumo Combustivel 1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
-        android:text="@string/consumo_combustivel_2"
+        android:text="Consumo Combustível 2"
         app:layout_constraintStart_toStartOf="@+id/tvConsumo1"
         app:layout_constraintTop_toBottomOf="@+id/btBuscaConsu1" />
 
@@ -55,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/valor_litro_combustivel_1"
+        android:text="@string/valor_litro_combust_vel_1"
         app:layout_constraintStart_toStartOf="@+id/tvConsumo2"
         app:layout_constraintTop_toBottomOf="@+id/btBuscaConsu2" />
 
@@ -64,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/valor_litro_combustivel_2"
+        android:text="@string/valor_litro_combust_vel_2"
         app:layout_constraintStart_toStartOf="@+id/tvValorLitro1"
         app:layout_constraintTop_toBottomOf="@+id/valueFue1" />
 
@@ -110,7 +110,7 @@
             android:id="@+id/value_fue_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="valor R$" />
+            android:hint="@string/valor_r" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -126,7 +126,7 @@
             android:id="@+id/value_fue_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="valor R$" />
+            android:hint="@string/valor_r" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -143,12 +143,11 @@
         android:layout_width="174dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
-        android:text="Button"
+        android:text="@string/button"
         android:textColorLink="#000000"
         android:backgroundTint="#6EC669"
         app:layout_constraintEnd_toEndOf="@+id/valueFue2"
         app:layout_constraintStart_toStartOf="@+id/tvValorLitro2"
         app:layout_constraintTop_toBottomOf="@+id/valueFue2" />
-d.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

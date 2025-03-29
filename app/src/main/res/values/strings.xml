@@ -9,4 +9,8 @@
     <string name="litro_gasolina">Litro Gasolina</string>
     <string name="litro_etanol">Litro Etanol</string>
     <string name="calcular_consumo">Calcular Consumo</string>
+    <string name="valor_litro_combust_vel_2">Valor Litro Combustível 2</string>
+    <string name="valor_litro_combust_vel_1">Valor Litro Combustível 1</string>
+    <string name="valor_r">valor R$</string>
+    <string name="button">Button</string>
 </resources>
