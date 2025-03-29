@@ -8,113 +8,147 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btBuscaConsu1"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="133dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/buscar_1"
-        app:layout_constraintEnd_toEndOf="parent"
+    <TextView
+        android:id="@+id/tvConsumo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/consumo_combustivel_1"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btBuscaConsu2"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="133dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/buscar_2"
-        app:layout_constraintEnd_toEndOf="parent"
+    <TextView
+        android:id="@+id/tvConsumo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/consumo_combustivel_2"
+        app:layout_constraintStart_toStartOf="@+id/tvConsumo1"
         app:layout_constraintTop_toBottomOf="@+id/btBuscaConsu1" />
 
     <Button
-        android:id="@+id/btCalcular"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="242dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="84dp"
-        android:text="@string/calcular_consumo"
+        android:id="@+id/btBuscaConsu1"
+        android:textColorLink="#000000"
+        android:backgroundTint="#6EC669"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/buscar_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nrLitroGasolina.edit_text" />
+        app:layout_constraintTop_toTopOf="@+id/consumptionFue1" />
+
+    <Button
+        android:id="@+id/btBuscaConsu2"
+        android:textColorLink="#000000"
+        android:backgroundTint="#6EC669"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/buscar_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/consumptionFue2" />
 
     <TextView
-        android:id="@+id/tvResultadoCalc"
-        android:layout_width="332dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tvValorLitro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/valor_litro_combustivel_1"
+        app:layout_constraintStart_toStartOf="@+id/tvConsumo2"
+        app:layout_constraintTop_toBottomOf="@+id/btBuscaConsu2" />
+
+    <TextView
+        android:id="@+id/tvValorLitro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/valor_litro_combustivel_2"
+        app:layout_constraintStart_toStartOf="@+id/tvValorLitro1"
+        app:layout_constraintTop_toBottomOf="@+id/valueFue1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/consumptionFue1"
+        android:layout_width="85dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/tvConsumo1"
+        app:layout_constraintTop_toTopOf="@+id/tvConsumo1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/consumption_fue_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/consumptionFue2"
+        android:layout_width="83dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/tvConsumo2"
+        app:layout_constraintTop_toTopOf="@+id/tvConsumo2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="numberDecimal"
+            android:id="@+id/consumption_fue_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/valueFue1"
+        android:layout_width="149dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/tvValorLitro1"
+        app:layout_constraintTop_toTopOf="@+id/tvValorLitro1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="numberDecimal"
+            android:id="@+id/value_fue_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="valor R$" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/valueFue2"
+        android:layout_width="146dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/tvValorLitro2"
+        app:layout_constraintTop_toTopOf="@+id/tvValorLitro2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="numberDecimal"
+            android:id="@+id/value_fue_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="valor R$" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="305dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/valueFue2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btCalcular" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/nrConsGasolina.edit_text"
-        android:layout_width="190dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btBuscaConsu1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btBuscaConsu1"
-        app:layout_constraintVertical_bias="0.0">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nrConsGasolina"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/consumo_gasolina"
-            tools:ignore="TouchTargetSizeCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="190dp"
-        android:layout_height="43dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btBuscaConsu2"
-        app:layout_constraintStart_toStartOf="@+id/nrConsGasolina.edit_text"
-        app:layout_constraintTop_toTopOf="@+id/btBuscaConsu2"
-        app:layout_constraintVertical_bias="0.0">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nrConsEtanol"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/consumo_etanol"
-            tools:ignore="TouchTargetSizeCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/nrConsEtanol.edit_text"
-        android:layout_width="190dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="18dp"
-        app:layout_constraintStart_toStartOf="@+id/nrConsGasolina.edit_text"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nrLitroGasolina"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/litro_gasolina"
-            tools:ignore="TouchTargetSizeCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/nrLitroGasolina.edit_text"
-        android:layout_width="190dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="18dp"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
-        app:layout_constraintTop_toBottomOf="@+id/nrConsEtanol.edit_text">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nrLitroEtanol"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/litro_etanol"
-            tools:ignore="TouchTargetSizeCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="174dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        android:textColorLink="#000000"
+        android:backgroundTint="#6EC669"
+        app:layout_constraintEnd_toEndOf="@+id/valueFue2"
+        app:layout_constraintStart_toStartOf="@+id/tvValorLitro2"
+        app:layout_constraintTop_toBottomOf="@+id/valueFue2" />
+d.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
